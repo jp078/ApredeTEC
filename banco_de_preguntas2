@@ -1,0 +1,129 @@
+import random as rnd
+respuesta=0
+def preguntas_sec(respuesta):
+    numerornd=0
+    numerornd=rnd.randint(1,40)
+    if numerornd==1:
+        print("¿Sabes lo que es un refrán?\n1) Un número entero positivo\n2) Una expresión popular que transmite una lección o consejo en forma de una breve y memorable frase.\n3) Un tipo de ave")
+        respuesta=3
+    if numerornd==2:
+        print('¿Sabes lo que es un dicho?\n1) Un nombre propio\n2) Una preposición\n3) Una expresión popular que transmite un consejo, idea o enseñanza en forma de una frase o frase hecha.')
+        respuesta=3
+    if numerornd==3:
+        print('¿Como podemos diferenciar un dicho de un refran?\n1) Por su longitud y su propósito; los refranes son generalmente más cortos y transmiten lecciones o consejos.')
+        print('\n2) Por su origen geográfico.\n3) Por el número de palabras que contienen.')
+        respuesta=1
+    if numerornd==4:
+        print("¿Que es una monografia?\n1) Un tipo de libro de texto.\n2) Un documento académico que se centra en un tema específico\n3) Un formato de presentación oral.")
+        respuesta=2
+    if numerornd==5:
+        print("¿Cuales son las partes del cuento?\n1) Intro, Coro y Outro.\n2) Inicio,Mitad y Final\n3)Planteamiento, Nudo y Desenlace.")
+        respuesta=3
+    if numerornd==6:
+        print("6 Qué es un poema?\n1) Una forma de cocinar alimentos.\n2) Una composición literaria que utiliza un lenguaje artístico y métrico para expresar sentimientos, ideas o imágenes.\n3) Un tipo de vehículo de motor.")
+        respuesta=2
+    if numerornd==7:
+        print("7 ¿Qué es una fábula?\n1) Un tipo de alimento.\n2) Una narración breve, generalmente en prosa o verso.\n3) Un vehículo espacial.")
+        respuesta=2
+    if numerornd==8:  
+        print("¿Qué es un texto argumentativo?\n1) Un tipo de peinado.\n2) Un discurso humorístico.\n3) Un tipo de texto que presenta argumentos, razonamientos y evidencia.")
+        respuesta=3
+    if numerornd==9:
+        print(" ¿Que son los adjetivos?\n1)  Palabras que describen o califican sustantivos, proporcionando información adicional sobre sus características o propiedades.\n2) palabras que significan lo mismo\n3) Verbos para cuantificar ")
+        respuesta=1
+    if numerornd==10:
+        print(" ¿Que son los sustantivos?\n1) Elementos no visibles dentro del texto\n2) Palabras que se utilizan para expresar emociones.\n3) Palabras que se utilizan para nombrar a personas, lugares, cosas, ideas o conceptos.")
+        respuesta=3
+    if numerornd==11:
+        print(" ¿Que es una palabra homofoná?\n1) Una palabra que rima con otra.\n2) Una palabra que suena igual que otra pero tiene un significado diferente.\n3) Una palabra que se utiliza en la poesía. ideas o conceptos.")
+        respuesta=2
+    if numerornd==12:
+        print("¿Que es un adjetivo?\n1) Un tipo de verbo.\n2) Palabras que se utilizan para conectar oraciones.\n3) Palabras que describen o califican sustantivos.")
+        respuesta=3
+    if numerornd==13:
+        print("¿Que es el predicado?\n1) Una oración que expresa una acción o estado.\n2) Un sustantivo.\n3) Una palabra que enlaza el sujeto con el verbo en una oración.")
+        respuesta=1
+    if numerornd==14:
+        print(" ¿Que es un sinónimo?\n1) Un antónimo.\n2) Una palabra que tiene un significado opuesto a otra.\n3) Una palabra que tiene un significado similar a otra palabra en el contexto.")
+        respuesta=3
+    if numerornd==15:
+         print("15 ¿Que es un antónimo?\n1) Una palabra que rima con otra.\n2) Una palabra que tiene un significado similar a otra palabra en el contexto.\n3) Una palabra que tiene un significado opuesto a otra palabra.")
+         respuesta=3
+    if numerornd==16:
+        print(" ¿Que es un paranónimo?\n1)Palabras que suenan similar a otras palabras y tienen significados diferentes, lo que a menudo provoca confusión.\n2) Un tipo de texto de investigacion\n3) Una forma de denominar el tipo de palabra")
+        respuesta=1
+    if numerornd==17:
+        print("¿Que es un homónimo?\n1) Palabras que suenan igual pero tienen diferentes significados.\n2) Palabras que se utilizan en la poesía.\n3) Una figura retórica.")
+        respuesta=1
+    if numerornd==18:
+        print("18 ¿Para qué sirve la acentuación?\n1) Para añadir belleza estilística a un texto.\n2) Para cambiar el significado de una palabra.\n3) Para indicar la sílaba tónica o acentuada en una palabra y, en algunos casos, para diferenciar palabras que se escriben igual pero tienen significados distintos.")
+        respuesta=2
+    if numerornd==19:
+        print("19 ¿Para qué sirven las abreviaciones?\n1) Para hacer que un texto sea más largo y detallado.\n2) Para dificultar la comprensión de un texto.\n3) Para acortar palabras o frases largas y facilitar la escritura y lectura de textos")
+        respuesta=3
+    if numerornd==20:
+        print("20 ¿Qué es un pronombre?\n1) Un sustantivo propio.\n2) Una palabra que enlaza el sujeto con el verbo en una oración.\n3) Una palabra que se utiliza en lugar de un sustantivo.")
+        respuesta=3
+    if numerornd==21:
+        print("21 ¿Que es una metafora?\n1)Un tipo de instrumento musical.\n2) Una figura retórica\n3) Un tipo de mensaje")
+        respuesta=2
+    if numerornd==22:
+        print("22 ¿Que es un sujeto?\n1) Una accion en una oración.\n2) La parte final de una oración.\n3) El componente de una oración que realiza la acción del verbo o de quien se habla en la oración.")
+        respuesta=3
+    if numerornd==23:
+        print("23 ¿Qué es un reportaje?\n1) Un tipo de texto periodístico que proporciona información detallada y contextual\n2) Un análisis diacrónico de una sociedad.\n3) Un registro cronotópico de eventos discursivos.")
+        respuesta=1
+    if numerornd==24:
+        print("24 ¿Qué es el artículo?\n1) Un componente intrínseco de una forma geométrica singular que se expresa matemáticamente.\n2) Una preposición.\n3) Una palabra gramatical que se utiliza para limitar o especificar un sustantivo y para indicar su género y número..")
+        respuesta=3
+    if numerornd==25:
+        print("25  ¿Qué es la crítica?\n1) Un género literario que narra historias de aventuras.\n2) Un tipo de comentario negativo.\n3) Un análisis y evaluación detallados de una obra de arte, película...")
+        respuesta=3
+    if numerornd==26:
+        print("26 ¿Qué es una entrevista?\n1) Un examen escrito.\n2) Un tipo de conversación formal.\n3) Una reunión social. ")
+        respuesta=2
+    if numerornd==27:
+        print("27 ¿Para qué sirve el periódico escolar?\n1) Para aprender a tocar instrumentos musicales.\n2) Para promover la práctica del ajedrez.\n3) Para fomentar la comunicación, la escritura, la expresión artística y la difusión de noticias. ")
+        respuesta=3
+    if numerornd==28:
+        print("28 ¿Qué es la coma en el ámbito ortográfico?\n1) Un signo de puntuación que separa palabras en una oración.\n2) Un acento gráfico.\n3) Una vocal diacrítica. ")
+        respuesta=1
+    if numerornd==29:
+        print("29 ¿Qué es el punto en el ámbito ortográfico?\n1) Un instrumento de escritura.\n2) Un signo de puntuación que marca el final de una oración o enunciado.\n3) Un acento gráfico.")
+        respuesta=2
+    if numerornd==30:
+        print("30 ¿Qué es el punto y coma en el ámbito ortográfico?\n1) Un signo de exclamación.\n2) Un signo de puntuación que se utiliza para separar partes de una oración que están estrechamente relacionadas.\n3) Un acento ortográfico. ")
+        respuesta=2
+    if numerornd==31:
+        print("31 ¿Qué es el paréntesis?\n1) Un instrumento musical.")
+        print("2) Un signo de puntuación que se utiliza para incluir información adicional o explicativa.\n3) Un tipo de acento ortográfico. ")
+        respuesta=2
+    if numerornd==32:
+        print("32  ¿Qué son los puntos suspensivos?\n1) Una forma de iluminación decorativa.\n2) Un tipo de acento gráfico.\n3) Un conjunto de tres puntos (…).")
+        respuesta=3
+    if numerornd==33:
+        print("33  ¿Qué es una historieta?\n1) Una recopilación de recetas de cocina.\n2) Un tipo de libro de ciencias.\n3) Una narración visual que utiliza viñetas y dibujos.")
+        respuesta=3
+    if numerornd==34:
+        print('34 ¿Qué es un artículo de opinión?\n1) Un tipo de novela.\n2) Un tratado filosófico.\n3) Un texto periodístico de género opinativo en el que un autor argumenta de manera lúcida y persuasiva ')
+        respuesta=3
+    if numerornd==35: 
+        print(' ¿Qué es una autobiografía?\n1) Un relato escrito por una persona sobre su propia vida\n2) Una narración histórica.\n3) Una carta de amor. ')
+        respuesta=1
+    if numerornd==36:
+        print(' ¿Qué es un mapa conceptual?\n1) Un tipo de receta de cocina.\n2) Una forma geométrica en matemáticas.\n3) Una representación gráfica que organiza y relaciona ideas. ')
+        respuesta=3
+    if numerornd==37: 
+        print('37 ¿Qué es la cultura? \n1) Un descubrimiento cienbtifico. \n2) Un concepto filosófico abstracto.\n3) Un conjunto de símbolos, valores, tradiciones, creencias, rituales, normas y prácticas ')
+        respuesta=3
+    if numerornd==38:
+        print(' ¿Qué es una tradición?\n1) Un objeto antiguo.\n2) Una costumbre, práctica o creencia que se transmite de generación en generación.\n3) Un premio que se otorga a la poblacion.')
+        respuesta=2
+    if numerornd==39:
+        print("Qué es una obra literaria?\n1) Una obra de teatro.\n2) Un término científico.\n3) Una creación artística textual que emplea la escritura como medio para transmitir complejas estructuras narrativas,. ")
+        respuesta=3
+    if numerornd==40:
+        print("¿Que es un experimento cientifico? \n1) Un descubrimiento.\n2) Un análisis químico y matemático.\n3) Un procedimiento controlado y repetible realizado con el propósito de investigar.")
+        respuesta=3 
+
+    return(respuesta)
