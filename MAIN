@@ -1,0 +1,280 @@
+import random as rnd
+import time
+import banco_de_preguntas2
+dado_tablero1=0
+calculo=0
+def ejercicios_primaria(calculo):
+    eleccion=rnd.randint(1,4)
+    if eleccion==3:
+        x=rnd.randint(10,100)
+        y=rnd.randint(10,50)
+        calculo= x*y
+        print(f"multiplica {x}*{y}")
+    if eleccion==1:
+        x=rnd.randint(6,30)
+        y=rnd.randint(6,30)
+        print(f"suma {x} + {y}")
+        calculo=x+y
+    if eleccion==2:
+        x=rnd.randint(10,40)
+        y=rnd.randint(10,40)
+        print(f"Resta {x} - {y}")
+        calculo=x - y
+    if eleccion==4:
+        x=rnd.randint(1,50)
+        y=rnd.randint(1,10)
+        print(f"divide {x} / {y}")
+        calculo=x/y
+    return(calculo)
+
+def ejercicios_secundaria(calculo):
+    eleccion=rnd.randint(1,4)
+    if eleccion==1:
+        x=rnd.randint(10,100)
+        y=rnd.randint(10,79)
+        print(f"Resta {x} - {y}")
+        calculo=x - y
+    if eleccion==2:
+        x=rnd.randint(10,80)
+        y=rnd.randint(10,100)
+        print(f"multiplica {x} x {y}")
+        calculo=x * y
+    if eleccion==3:
+        x=rnd.randint(10,70)
+        y=rnd.randint(10,80)
+        print(f"divide {x} / {y}")
+        calculo=x/y
+    if eleccion==4:
+        opciones_ecuaciones=rnd.randint(1,3)
+        if opciones_ecuaciones==1:
+            print("¿Cuál es la solución de la ecuación 2x - 5 = 9? \n1) x = 7 \n2) x = 2 \n3) x = 14")
+            calculo=1
+        if opciones_ecuaciones==2:
+            print("¿Cuál es la solución de la ecuación 3y + 8 = 20? \n1) y = 4 \n2) y = 6 \n3) y = 12")
+            calculo=1
+        if opciones_ecuaciones==3:
+            print(" ¿Cuál es la solución de la ecuación 6w - 3 = 15? \n1) w = 2 \n2) w = 3 \n3) w = 4")
+            calculo=2
+    return(calculo)
+
+def preguntas_primaria(respuesta):
+    numero_random=rnd.randint(1,20)
+    if numero_random==1:
+        print("¿Cuál de las siguientes palabras está escrita de manera incorrecta? \n1)Perro\n2)Pájaro\n3)Cabayo")
+        respuesta=3
+    if numero_random==2:
+        print("Define que tipo de palabra es: camión\n1)Aguda\n2)Grave\n3)Esdrújula")
+        respuesta=1
+    if numero_random==3:
+        print("¿Cual es el sujeto de la oración?: El niño jugaba en el parque. \n1)Parque\n2)El niño\n3)Ninguno de los anteriores")
+        respuesta=2
+    if numero_random==4:
+        print("¿Cuál de las siguientes palabras es una preposición?\n1)Arriba\n2)Hasta\n3)Dentro ")
+        respuesta=2
+    if numero_random==5:
+        print("Escoge la palabra correctamente escrita.\n1)Fasil\n2)Fuzil\n3)Fosil")
+        respuesta=3
+    if numero_random==6:
+        print("Qué animal hace como sonido: ¡cua, cua, cua! \n1)Un Pato\n2)Una Vaca\n3)Un Caballo")
+        respuesta=1
+    if numero_random==7:
+        print("Define que tipo de palabra es: Esdrújula\n1)Aguda\n2)Grave\n3)Esdrújula  ")
+        respuesta=3
+    if numero_random==8:
+        print("¿Cuál de las siguientes palabras es una preposición?\n1)Entre\n2)Silencioso\n3)Aguda ")
+        respuesta=1
+    if numero_random==9:
+        print("¿Cual es el objeto de la oración?: Manuel estudiaba para su exámen. \n1)Exámen\n2)Manuel\n3)Estudiaba")
+        respuesta=1
+    if numero_random==10:
+        print("¿Cuál es la palabra escrita correctamente?:\n1)Vueno\n2)Boeno\n3)Bueno ")
+        respuesta=3
+    if numero_random==11:
+        print("¿Cuál es la palabra escrita de manera incorrecta?: \n1)Manzana\n2)Automóbil\n3)Avión")
+        respuesta=1
+    if numero_random==12:
+         print("¿Qué tipo de palabra es: Árbol?\n1)Aguda\n2)Grave\n3)Esdrújula")
+         respuesta=2
+    if numero_random==13:
+        print("Escoge la palabra correctamente escrita.\n1)Carro\n2)Carró\n3)Karro")
+        respuesta=1
+    if numero_random==14:
+        print("¿Quién fue el artista que pinto 'La Noche Estrellada'\n1)Salvador Dalí\n2)Vincent van Gogh\n3)William Shakespeare.")
+        respuesta=2
+    if numero_random==15:
+        print("¿Cuál es el mínimo de versos en una estrofa?\n1)2 o más\n2)5 o más\n3)1 solamente")
+        respuesta=1
+    if numero_random==16:
+        print(" ¿Cómo se llama una estrofa de 4 versos?\n1)Oración\n2)Texto literario\n3)Cuarteto")
+        respuesta=3
+    if numero_random==17:
+        print(" En la oración: 'El perro ____ a la cama',¿Qué palabra lo puede completar correctamente?\n1)Saltó\n2)Mordió\n3)Tendió")
+        respuesta=1
+    if numero_random==18:
+        print("¿Qué pronombre tiene el objeto? Libro\n1)El libro\n2)Los libro\n3)Las libro")
+        respuesta=1
+    if numero_random==19:
+        print("19) Define que tipo de palabra es: Pájaro\n1)Aguda\n2)Grave\n3)Esdrújula")
+        respuesta=3
+    if numero_random==20:
+        print("20) Año en el que inició la independencia de México: \n1)1910\n2)1810\n3)2020")
+        respuesta=2
+    return(respuesta)
+
+dado_tablero2=0
+movimientos=0
+inicial=""
+nombre_de_jugador=""
+def dados(movimientos):
+    dado_tablero1=rnd.randint(1,6)
+    print("tu dado es",dado_tablero1)
+    movimientos=dado_tablero1
+    return(movimientos)
+
+
+casilla=0  
+nombre_de_jugador2=""
+respuestas_incorrectas=0
+respuestas_correctas=0
+print(""" AprendeTEC:
+
+Te damos la bienvenida a AprendeTEC
+
+Un juego intereactivo de nivel eduacacion basica - eduacacion media en el cual podas probrar y mejorar tus habilidades en las  materias de matematicas y 
+español donde resolveras ejercicios de opcion multiple
+""")
+print("Que deseas hacer: \n1)Juego rapido \n2)Creditos")
+opciones_iniciales=int(input("  "))
+if opciones_iniciales==1:
+    print("Has elejido modo de juego rapido:")
+    print("El juego consiste en un tablero donde vas avanzando con cada tirada de dado cada casilla tiene una preguntas aleatorias")
+    print("se gana llegando a la ultima casilla pero CUIDADO si no respondes bien te quedaras en la casilla que estabas")
+    print("Nivel de juego:")
+    print("1)primaria \n2)secundaria")
+    nivel=int(input("     "))
+    if nivel== 1:
+        print("Nombre de jugador(a):")
+        nombre_de_jugador=input("  ")
+        print(f" Mucho Gusto! {nombre_de_jugador} que tipo de juego quieres que sea la partida \n1)Matematico \n2)Español")
+        tipo_de_juego=int(input("   "))
+        if tipo_de_juego==1: 
+            print("iniciando juego")
+            print(nombre_de_jugador,"tira los dados para avanzar, responderas una pregunta ")
+            print("si esa pregunta es correcta pasaras a la casilla correspondiente")
+            casilla_jugador_1=0
+            while casilla_jugador_1<= 22:
+                time.sleep(2.5)
+                movimientos=0
+                print(f"te encuentras en la casilla",casilla_jugador_1)
+                print("tira los dados")
+                movimientos+=dados(movimientos)
+                print("si respondes esta pregunta correctamente pasarasaa la siguente casilla, hasta que no respondas de manera correcta te quedaras en la casilla:",casilla_jugador_1)
+                respuesta=0
+                respuesta=ejercicios_primaria(calculo),casilla_jugador_1
+                respuesta_problema=0
+                respuesta_problema=float(input("  "))
+                
+                if respuesta_problema == respuesta :
+                    print("Tu respuesta es correcta ¡En hora buena!")
+                    casilla_jugador_1+=movimientos
+                    if casilla_jugador_1<=22:
+                        print("avanzas a la casilla:",casilla_jugador_1)
+                if respuesta_problema != respuesta:
+                    print("t respesta es incorrecta, vuelvelo a intentar")
+                if casilla_jugador_1==22:
+                    print("Felicidades has ganado")
+        if tipo_de_juego==2:
+            respuestas_incorrectas=0
+            respuestas_correctas=0
+            print("iniciando juego")
+            print(nombre_de_jugador,"tira los dados para avanzar, responderas una pregunta ")
+            print("si esa pregunta es correcta pasaras a la casilla correspondiente")
+            casilla_jugador_1=19
+            while casilla_jugador_1<= 22:
+                time.sleep(2.5)
+                movimientos=0
+                print(f"te encuentras en la casilla",casilla_jugador_1)
+                print("tira los dados")
+                movimientos+=dados(movimientos)
+                print("si respondes esta pregunta avanzaras si no te quedaras en la casilla",casilla_jugador_1)
+                respuesta=0
+                respuesta=preguntas_primaria(respuesta)
+                respuesta_problema=0
+                respuesta_problema=int(input())
+                if respuesta_problema == respuesta :
+                    print("tu respuesta es correcta ¡En hora buena!")
+                    respuestas_correctas+=1
+                    casilla_jugador_1+=movimientos
+                    if casilla_jugador_1<=22:
+                        print("avanzas a la casilla",casilla_jugador_1)
+                if respuesta_problema != respuesta:
+                    print("tu respuesta es incorrecta,vuelvelo a intentar")
+                    respuestas_incorrectas+=1
+                if casilla_jugador_1>=22:
+                    print("Felicidades has ganado")
+                    print("estas son tus respuestas correctas",respuestas_correctas,"estas son tus respuestas incorrectas",respuestas_incorrectas)
+    if nivel== 2:
+        print("Nombre de jugador(a):")
+        nombre_de_jugador=input("  ")
+        print(f"Mucho gusto: {nombre_de_jugador}que tipo de juego quieres que sea la partida \n1)Matematico \n2)Español")
+        tipo_de_juego=int(input("   "))
+        if tipo_de_juego==1:
+                print("iniciando juego")
+                print(nombre_de_jugador,"tira los dados para avanzar, responderas una pregunta ")
+                print("si esa pregunta es correcta pasaras a la casilla correspondiente")
+                casilla_jugador_1=0
+                while casilla_jugador_1<= 38:
+                    time.sleep(2.5)
+                    movimientos=0
+                    print(f"te encuentras en la casilla",casilla_jugador_1)
+                    print("tira los dados")
+                    movimientos+=dados(movimientos)
+                    print("si respondes esta pregunta avanzaras si no te quedaras en la casilla",casilla_jugador_1)
+                    respuesta=0
+                    respuesta=ejercicios_secundaria(calculo)
+                    respuesta_problema=0
+                    respuesta_problema=float(input("  "))
+                    print(respuesta)
+                    if respuesta_problema == respuesta :
+                        print("tu respuesta es correcta, ¡En hora buena!")
+                        casilla_jugador_1+=movimientos
+                    if casilla_jugador_1<=22:
+                        print("avanzas a la casilla",casilla_jugador_1)
+                    if respuesta_problema != respuesta:
+                        print("tu respuesta es incorrecta,vuelvelo a intentar")
+                    if casilla_jugador_1==22:
+                        print("Felicidades has ganado")
+        if tipo_de_juego==2:
+            print("iniciando juego")
+            print(nombre_de_jugador,"tira los dados para avanzar, responderas una pregunta ")
+            print("""si esa pregunta es correcta pasaras a la casilla correspondiente
+                  no podras avanzar a la siguente casilla hasta que contestes la pregunta de manera correcta""")
+            casilla_jugador_1=0
+            while casilla_jugador_1<= 38:
+                time.sleep(2.5)
+                movimientos=0
+                print(f"te encuentras en la casilla",casilla_jugador_1)
+                print("tira los dados")
+                movimientos+=dados(movimientos)
+                print("si respondes esta pregunta avanzaras si no te quedaras en la casilla",casilla_jugador_1)
+                respuesta=0
+                respuesta=banco_de_preguntas.preguntas_sec(respuesta)
+                respuesta_problema=0
+                respuesta_problema=float(input("  "))
+                if respuesta_problema == respuesta :
+                    print("tu respuesta es correcta! ¡En hora buena!")
+                    casilla_jugador_1+=movimientos
+                if casilla_jugador_1<=22:
+                    print("avanzas a la casilla",casilla_jugador_1)
+                if respuesta_problema != respuesta:
+                    print("tu respuesta es incorrecta,vuelvelo a intentar")
+                if casilla_jugador_1==22:
+                    print("Felicidades has ganado")
+
+
+if opciones_iniciales==2:
+    print("Juego realizado por:\nJuan Pablo Hernandez Lopez\nJesús Gutiérrez Casique\nBrenda Santana\nPatricio Blanco Rafols")
+    print("1)salir")
+    salir=int(input("   "))
+    if salir ==1:
+        print("vuelve pronto")
